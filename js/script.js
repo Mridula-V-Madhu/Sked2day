@@ -60,3 +60,11 @@ deleteAllBtn.onclick = ()=>{
   localStorage.setItem("New Todo", JSON.stringify(listArray)); 
   showTasks(); 
 }
+var e = "checked";
+localStorage.setItem("checked",e );
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false)
