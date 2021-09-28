@@ -218,3 +218,8 @@ display: table;
 .pending .pendingTasks{
   font-family: 'Poller One', cursive;
 }
+ul li.checked {
+  background: rgb(143, 238, 209);
+  color: rgb(12, 11, 11);
+  text-decoration: line-through;
+}
